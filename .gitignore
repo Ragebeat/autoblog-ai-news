@@ -1,0 +1,21 @@
+# Hugo generated files
+/public/
+/resources/_gen/
+/data/assets/
+/hugo_cache/
+/hugo_stats.json
+
+# Environment variables
+.env
+
+# Dependencies
+/node_modules/
+/.sass-cache/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
