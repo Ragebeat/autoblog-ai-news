@@ -1,0 +1,25 @@
+{{ $image := "" }}
+{{ if .Page.Resources }}
+  {{ $image = .Page.Resources.GetMatch (.Get "src") }}
+{{ else }}
+  {{ $image = resources.Get (.Get "src") }}
+{{ end }}
+
+{{ if $image }}
+  {{ $alt := .Get "alt" | default "" }}
+
+  {{/* Создаем версии изображения */}}
+  {{ $small := $image.Resize "400x webp q75" }}
+  {{ $medium := $image.Resize "800x webp q75" }}
+  {{ $large := $image.Resize "1200x webp q75" }}
+
+  {{/* Генерируем тег <picture> с srcset */}}
+  <picture>
+    <source srcset="{{ $small.RelPermalink }} 400w, {{ $medium.RelPermalink }} 800w, {{ $large.RelPermalink }} 1200w"
+            sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, 1200px"
+            type="image/webp">
+    <img src="{{ $large.RelPermalink }}" alt="{{ $alt }}" loading="lazy" width="{{ $large.Width }}" height="{{ $large.Height }}">
+  </picture>
+{{ else }}
+  <p>Ошибка: изображение {{ .Get "src" }} не найдено.</p>
+{{ end }}
