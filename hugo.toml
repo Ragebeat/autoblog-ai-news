@@ -1,4 +1,12 @@
 baseURL = 'https://ai-news-d33.pages.dev/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+defaultContentLanguage = "ja"
+defaultContentLanguageInSubdir = false # или true, если хотите URL вида example.com/ja/posts/
+languageCode = "ja-jp"
+title = "エーアイ・フロンティア" # Измените на японское название
 theme = "ananke"
+
+[languages]
+  [languages.ja]
+    languageName = "日本語" # Японский язык
+    weight = 1
+    title = "エーアイ・フロンティア" # Повторите здесь
