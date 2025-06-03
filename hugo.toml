@@ -3,7 +3,8 @@ defaultContentLanguage = "ja"
 defaultContentLanguageInSubdir = false # или true, если хотите URL вида example.com/ja/posts/
 languageCode = "ja-jp"
 title = "エーアイ・フロンティア" # Измените на японское название
-theme = "ananke" 
+theme = "ananke"
+googleAnalytics = "G-FV4EBKL1EP"
 
 [languages]
   [languages.ja]
