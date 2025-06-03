@@ -3,7 +3,7 @@ title: "米国の半導体関税：導入は現実的ではない？ AI技術へ
 description: "米国の半導体輸入関税に関する憶測が飛び交う中、専門家は導入の可能性は低いと分析。サプライチェーンへの影響とAI技術への影響を懸念し、現実的な解決策を模索すべきと提言。"
 date: "2025-06-02T22:05:34.387Z"
 tags: ["半導体関税", "サプライチェーン", "AI技術", "経済影響", "米国の政策"]
-images: ["/images/3c051a35-03fb-4913-8ae6-cdcea5e8180e.jpg"] # Для og:image
+images: ["/images/3c051a35-03fb-4913-8ae6-cdcea5e8180e.jpg"] # Дл og:image
 #featured_image: "/images/3c051a35-03fb-4913-8ae6-cdcea5e8180e.jpg"
 #featured_image_alt: "記事の画像"
 #featured_image_width: 1024
